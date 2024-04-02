@@ -1,0 +1,336 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-weight: 500;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+ .container-fluid{
+    padding: 0;
+}
+.container{
+    max-width: 1200px;
+}
+.bg-image{
+    min-height:auto;
+    position:relative;
+    display:block;  
+    background-position: center;
+    background-color: #EEEBE6;
+    padding: 0;
+    z-index: 1;
+}
+.bg-image::before{
+    content:""; 
+    background-image: url('images/01/bg-content-section-astro.png');
+    opacity:0.2;
+    position:absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    width:auto;
+    height:auto;
+    z-index: -3;
+}
+.bg-image-1{
+    min-height:auto;
+    position:relative;
+    display:block;  
+    background-position: center;
+    padding: 0;
+    z-index: 1;
+}
+.bg-image-1::before{
+    content:""; 
+    background-image: url('images/01/bg-dark.png');
+    opacity:0.2;
+    position:absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    width:auto;
+    height:auto;
+    z-index: -3;
+}
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.heading-1{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 100%;
+    padding: 100px 0;
+    padding-left: 20px;  
+    margin: 0;
+}
+
+
+.heading-1 h1{
+    font-family: "Playfair Display", serif;
+      font-optical-sizing: auto;
+      font-weight: 580;
+      font-style: normal;
+      font-size: 58px;
+    padding-bottom:20px;
+}
+.heading-1 h5{
+    color: #D5856F;
+    font-size: 20px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-variation-settings:"slnt" 0;
+}
+.heading-1 p{
+    color: #4F4F4F;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 18px;
+
+}
+/* .bg-image-1{
+    min-height:auto;
+    position:relative;
+    display:block;  
+    background-position: center;
+    padding: 0;
+    z-index: 1;
+}
+.bg-image-1::before{
+    content:""; 
+    background-image: url('images/01/bg-content-section-astro.png');
+    opacity:0.2;
+    position:absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    width:auto;
+    height:auto;
+    z-index: -3;
+} */
+.first-row{
+    justify-content: center;
+    padding: 80px 0;
+    margin-left: 0;
+}
+.details{
+    display: flex;
+    flex-direction: column;
+}
+.address{
+    padding: 30px;
+    display: flex;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2) ,0 4px 8px 0 rgba(0, 0, 0, 0.2);    
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.address h3{
+    font-size: 25px;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 580;
+    font-style: normal;
+
+}
+.address ul{
+    display: flex;
+    flex-direction: column;
+}
+.address ul li{
+    padding: 10px 0;
+    margin-left: 30px;
+    position: relative;
+    list-style: url(images/01/a3.jpg);
+}
+.address ul li a{
+    color: #909090;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.timing{
+    padding: 30px;
+    margin-top: 20px;
+    display: flex;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),0 4px 8px 0 rgba(0, 0, 0, 0.2);    
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.timing h3{
+    font-size: 25px;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 580;
+    font-style: normal;
+}
+.timing ul{
+    display: flex;
+    flex-direction: column;
+}
+.timing ul li{
+    padding: 10px 0;
+    margin-left: 30px;
+    position: relative;
+    list-style: url(images/01/yes-arrow-1.png);
+    color: #909090;
+    font-weight: 400;
+
+}
+
+form{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),0 4px 8px 0 rgba(0, 0, 0, 0.2);  
+    padding: 30px;  
+    height: 100% ;
+}
+.feedback h3{
+    font-size: 25px;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 580;
+    font-style: normal;
+    margin-bottom: 20px;
+}
+.feedback button{
+    background-color: #ba9a63;
+    color: white;
+    padding: 10px 50px;
+    border-radius: 0;
+    border: none;
+}
+.feedback button:hover{
+    background-color: black;
+}
+.feedback label{
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    color: #909090;
+}
+.feedback input{
+    padding:25px 20px;
+    border-radius: 0;
+}
+.feedback textarea{
+    border-radius: 0;
+}
+.partener-image{
+    /* display: flex;
+    flex-direction: row; */
+    margin: 50px 0 100px;
+    justify-content: center;
+    align-items: center;
+    /* margin: 0; */
+}
+.partener-img{
+   max-height: 160px;
+    max-width: 160px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;  
+}
+
+.our-partener-header{
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0;
+}
+.our-partener-heading{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+}
+.our-partener-heading-1{
+    padding-top: 10px;
+    font-size: 16px;
+    color: #B4975D;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    letter-spacing: 1px;
+    font-style: normal;
+    font-variation-settings:"slnt" 0;
+}
+.our-partener-heading-2{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 45px;
+    padding-top: 10px;
+    color: black;
+}
+.our-partener-heading-3{
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    padding-top: 10px;
+    line-height: 30px;
+    color: #A6A6B0;
+}
+.map-row{
+    margin: 20px;
+    padding-bottom: 100px;
+}
+.map{
+    width: 100%;
+}
+@media screen and (max-width:992px) {
+    .heading-1{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-left: 0;
+    }
+    .heading{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+@media screen and (max-width:767px) {
+    .heading-1{
+        padding: 50px 0;
+    }
+    .heading-1 h1{
+        font-size: 40px;
+        padding-bottom: 10px;
+    }
+    .heading-1 h5{
+        font-size: 14px;
+    }
+    .heading-1 p{
+        font-size: 16px;
+    }
+}
+@media screen and (maax-width:350px) {
+    .heading-1 h1{
+        font-size: 25px;
+    }
+}

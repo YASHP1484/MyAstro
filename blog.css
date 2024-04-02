@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-weight: 500;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+     }
+ .container-fluid{
+    padding: 0;
+ }
+.narrow{
+    padding: 50px 100px;
+    /* max-width: 1200px; */
+}
+.blog-row{
+    margin-left: 0;
+}
+.bg-image{
+    max-height:100%;
+    position:relative;
+    display:block;  
+    background-position: center;
+    background-color: #EEEBE6;
+    z-index: 0;
+}
+.bg-image::before{
+    content:""; 
+    background-image: url('images/01/bg-content-section-astro.png');
+    opacity:0.3;
+    position:absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    width:auto;
+    height:auto;
+    z-index: -3;
+}
+.heading{
+    align-items: center;
+    justify-content: center;
+}
+.breadcrumb{
+    padding: 0;
+}
+.heading-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+    margin-left: 0;
+}
+
+.heading-1 h1{
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.heading-2 a{
+    padding: 5px 12px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1em;
+    background-color: #ba9a63;
+    border: none;
+    border-radius: 0;
+    color: white;
+}
+.breadcrumb{
+    background-color: #EEEBE6;
+}
+.heading-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.heading-2 a:hover{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+}
+.heading-3 a{
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: black;
+    text-decoration: none;
+}
+/* .narrow{
+    max-width: 900px;
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+} */
+.card-head{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.blog-img{
+    width: 100%;
+}
+.card{
+    background-color: #EEEBE6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+    border-radius: 0;
+    padding: 0;
+}
+.card-body{
+    padding: 30px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+}
+.card-body a{
+    margin-top: 0;
+    margin-bottom: 1rem;
+    line-height: 1.25;
+    font-size: 25px;
+    font-weight: 700;
+    color: black;
+    text-decoration: none;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.card-body a:hover{
+    color: #BA9A63;
+    transition: 0.9s;
+}
+.card-body p{
+    font-size: 16px;
+    line-height: 1.5;
+    color: #53514e;
+    overflow: hidden;
+    max-height: 5rem;
+    font-weight: 400;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-overflow: ellipsis;
+}
+.card-body button{
+    font-size: 16px;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 500px;
+    letter-spacing: normal;
+    color:#ba9a63;
+    border: 1px solid #ba9a63;
+    background: transparent;
+    border-radius: 0;
+    padding: 10px 20px;
+}
+.card-body button:hover{
+    background-color: #ba9a63;
+    color: white;
+}
+
+@media screen and (max-width:1200px) {
+    .narrow{
+        padding: 50px 70px;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .narrow{
+        padding: 50px 50px;
+    }
+}
+@media screen and (max-width:767px) {
+    .narrow{
+        padding: 50px 30px;
+    }
+}
+@media screen and (max-width:576px) {
+    .narrow{
+        padding: 50px 15px;
+    }
+}
+

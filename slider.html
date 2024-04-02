@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Icon Box Slider</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Custom CSS for the icon box slider */
+    /* Change box background color */
+    .icon-box {
+      background-color: #f8f9fa;
+      text-align: center;
+      padding: 20px;
+      border-radius: 5px;
+      margin: 0 auto;
+      width: 200px; /* Set the width of each icon box */
+    }
+
+    /* Style the carousel controls */
+    .carousel-control-prev,
+    .carousel-control-next {
+      width: 5%;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      width: 30px;
+      height: 30px;
+      background-color: #007bff; /* Change control icon color */
+      border-radius: 50%; /* Make the control icon round */
+    }
+
+    /* Change color of control icon arrows */
+    .carousel-control-prev-icon::before,
+    .carousel-control-next-icon::before {
+      content: '\2039'; /* Unicode for left arrow */
+      content: '\203A'; /* Unicode for right arrow */
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+<div id="iconBoxSlider" class="carousel slide" data-ride="carousel" data-interval="2000">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="row">
+        <div class="col">
+          <div class="icon-box">
+            <i class="fa fa-home fa-4x"></i>
+            <h5>Home</h5>
+            <p>Some description about home</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="icon-box">
+            <i class="fa fa-user fa-4x"></i>
+            <h5>User</h5>
+            <p>Some description about user</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="icon-box">
+            <i class="fa fa-cog fa-4x"></i>
+            <h5>Settings</h5>
+            <p>Some description about settings</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="icon-box">
+            <i class="fa fa-envelope fa-4x"></i>
+            <h5>Email</h5>
+            <p>Some description about email</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="icon-box">
+            <i class="fa fa-phone fa-4x"></i>
+            <h5>Phone</h5>
+            <p>Some description about phone</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Additional carousel items go here -->
+  </div>
+  <a class="carousel-control-prev" href="#iconBoxSlider" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#iconBoxSlider" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<script>
+  $(document).ready(function(){
+    $('#iconBoxSlider').carousel({
+      interval: false, // No interval for automatic sliding
+      wrap: true // Wrap around when reaching the end or start
+    });
+
+    // Function to continuously slide the carousel
+    function slideCarousel() {
+      $('#iconBoxSlider').carousel('next');
+    }
+
+    // Set interval to continuously slide the carousel
+    setInterval(slideCarousel, 2000); // Slide every 2 seconds
+  });
+</script>
+
+</body>
+</html>
